@@ -13,5 +13,6 @@ PATH=$PATH:$HOME/bin
 export PATH
 
 # set prompt
-export PS1="\e[0;32m[\u]\w\$ \e[m"
+PS1='\[\e[1;32m\][\u \w]\$\[\e[0m\] '
+export PS1
 export SUDO_PS1="\[\e[33;1;41m\][\u]\w\$\[\e[0m\] "
