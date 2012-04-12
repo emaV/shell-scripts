@@ -5,4 +5,4 @@ Shell script.
 Conf files
 
 * .vimrc: vim confg with some drupal bindings
-
+* .bash_profile: prompt, ssh autocomplete
