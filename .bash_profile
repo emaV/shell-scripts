@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # set autocomplete for ssh
-complete -W "$(echo $(grep '^ssh ' .bash_history | sort -u | sed 's/^ssh //'))" ssh
+complete -W "$(echo $((grep '^Host'  ~/.ssh/config; grep '^ssh ' ~/.bash_history) |cut -d ' ' -f2 |sort -u))" ssh
 
 # User specific environment and startup programs
 PATH=$PATH:$HOME/bin
