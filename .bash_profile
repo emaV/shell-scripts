@@ -5,6 +5,10 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+# more alias
+alias rsycp='rsync --progress -ah'
+alias rsymv='rsync --progress -ah --remove-sent-files'
+
 # set autocomplete for ssh
 complete -W "$(echo $((grep '^Host'  ~/.ssh/config; grep '^ssh ' ~/.bash_history) |cut -d ' ' -f2 |sort -u))" ssh
 
